@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login - Photography Tips and Techniques</title>
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #101010;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    .login-section {
+      max-width: 400px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 10px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+
+    .login-form label {
+      display: block;
+      font-size: 18px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .login-form input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      background-color: #333;
+      border: none;
+      border-radius: 5px;
+      color: #fff;
+    }
+
+    .login-form button {
+      background-color: #ff9900;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .login-form button:hover {
+      background-color: #e58200;
+    }
+  </style>
+</head>
+<body>
+    <section id="login" class="login-section">
+        <h2>Login</h2>
+        <form id="login-form" class="login-form">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" placeholder="Enter your username" value="testuser">
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" value="password123">
+          <label>
+            <input type="checkbox" id="show-password"> Show Password
+          </label>
+          <button type="submit">Login</button>
+        </form>
+      </section>
+  <script src="login-scripts.js"></script>
+</body>
+</html>

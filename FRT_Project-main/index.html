@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Login - Photography Tips and Techniques</title>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Photography Tips and Techniques</h1>
+    </div>
+  </header>
+  <div class="content">
+    <section id="login" class="login-section">
+      <h2>Login</h2>
+      <form id="login-form" class="login-form">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" value="testuser" required autocomplete="username">
+        <label for="password">Password:</label>
+        <div class="password-input-container">
+          <input type="password" id="password" name="password" placeholder="Enter your password" value="password123" required autocomplete="current-password">
+          <span id="show-password" class="password-toggle" onclick="togglePasswordVisibility()">Show Password</span>
+        </div>
+        
+        <button type="submit">Login</button>
+      </form>
+    </section>
+  </div>
+  <script src="login-scripts.js"></script>
+</body>
+</html>
